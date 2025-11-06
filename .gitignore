@@ -1,34 +1,35 @@
-# -------------------------
-# Node / React
-# -------------------------
-node_modules/
-build/
-dist/
-dist-ssr/
-*.local
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+# ==========================================
+# FRONTEND (React / Node)
+# ==========================================
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/lerna-debug.log*
 
-# -------------------------
-# Python / Backend
-# -------------------------
-# Environments
+# ==========================================
+# BACKEND (Python)
+# ==========================================
+# Virtual environments
 venv/
-ENV/
 env/
-.env/
+ENV/
 .venv/
+.env/
+
 # Byte-compiled / cache
 __pycache__/
 *.py[cod]
 *$py.class
+
 # Distribution / packaging
 build/
 develop-eggs/
@@ -44,9 +45,11 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+
 # PyInstaller
 *.manifest
 *.spec
+
 # Unit test / coverage reports
 htmlcov/
 .tox/
@@ -60,29 +63,58 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
-# Django / Flask stuff
-db.sqlite3
-instance/
-*.db
-# Logs
-*.log
-logs/
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-# mypy
 .mypy_cache/
-.dmypy.json
-dmypy.json
-# Pyre type checker
 .pyre/
-# pytype
 .pytype/
-# Cython debug symbols
 cython_debug/
 
-# -------------------------
-# OS / Editor / IDE
-# -------------------------
+# Django / Flask / FastAPI
+instance/
+*.db
+*.sqlite3
+__pypackages__/
+
+# ==========================================
+# LARGE DATA & MODEL FILES (Ignore for Git)
+# ==========================================
+# Datasets
+data/
+*.npy
+*.npz
+*.nc
+*.csv
+
+# Trained Models / Weights
+models/
+*.h5
+*.hdf5
+*.pkl
+*.pt
+*.onnx
+
+# ML / Tuning / Checkpoints
+keras_tuner_dir/
+checkpoints/
+runs/
+logs/
+*.log
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# ==========================================
+# ENVIRONMENT / SECRETS
+# ==========================================
+.env
+*.pem
+*.key
+
+# ==========================================
+# OS / EDITOR / SYSTEM FILES
+# ==========================================
 .vscode/*
 !.vscode/extensions.json
 .idea/
@@ -94,9 +126,9 @@ Thumbs.db
 *.sln
 *.sw?
 
-# -------------------------
-# Misc
-# -------------------------
-# Local environment and secret files
-.env
-*.pem
+# ==========================================
+# MISC
+# ==========================================
+# Temporary or generated files
+tmp/
+temp/
