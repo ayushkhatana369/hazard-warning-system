@@ -4,7 +4,7 @@ from scipy.signal import spectrogram
 import matplotlib.pyplot as plt
 
 # Load seismic waveform
-seismic_file = 'data/seismic/BW.BGLD..EH.D.2010.037'
+seismic_file = 'data/seismic/12.037'
 stream = read(seismic_file)
 trace = stream[0]
 data = trace.data

@@ -132,3 +132,7 @@ Thumbs.db
 # Temporary or generated files
 tmp/
 temp/
+# Model files
+models/
+*.h5
+*.hdf5
