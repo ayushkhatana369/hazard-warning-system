@@ -48,7 +48,7 @@ function App() {
 
     setLoading(true);
     try {
-      const backendIP = "192.168.1.2"; // your Flask server IP
+      const backendIP = "192.168.1.3"; // your Flask server IP
       const endpoint =
         hazardType === "cyclone"
           ? `http://${backendIP}:5000/predict/cyclone`
